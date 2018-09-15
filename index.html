@@ -1,15 +1,262 @@
-
 <!DOCTYPE html>
-<html>
 <head>
-<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="WebAgency - Future Digital Marketing"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.webagency.com/"/>
+    <meta property="og:image" content="http://webagency.com/images/logo.jpg"/>
+    <meta property="og:description" content="Website Creator"/>
+    <meta name="author" content="">
+    <title>WEBAGENCY - L'agence de tous vos projets</title>
+    <!-- Place this data between the <head> tags of your website -->
+    <title>Page Title. Maximum length 60-70 characters</title>
+    <meta name="description" content="Page description. No longer than 155 characters." />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Title Here"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.example.com/"/>
+    <meta property="og:image" content="http://example.com/image.jpg"/>
+    <meta property="og:description" content="Description Here"/>
+    <!-- Assets -->
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
-<div class="begin">
-    <h1>Loading....</h1>
+    <div class="navbar">
+     <ul class="nav">
+        <li class="right"><a href="#about">Contact</a></li>
+        <li class="right"><a href="#contact">Portfolio</a></li>
+       <li class="right"><a href="#news">Services</a></li>
+         <li class="right"><a class="active" href="#home">Acceuil</a>  </li>
+         <li><a href="home"><img src="images/logo.png" alt="Logo" id="logo"/></a></li>
+     </ul>
+    </div>
+<div class="main">
+   <div class="intro">
+    <div class="slideshow-container">
+            <img class="mySlides" src="images/slider/bg1.jpg">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="indicators"> 
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+    </div>
+    </div>
+    <div class="line">
+        <svg height="1" width="1">
+            <line x1="10%" y1="1" x2="90%" y2="1"  />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+    </div>
+    <div class="container">
+       <div class="headlines">
+        <h1>NOS SERVICES</h1>
+        <svg width="200" height="100">
+            <line x1="50" y1="50" x2="150" y2="50" style="stroke:rgb(130,130,130);stroke-width:2" />
+	        <circle cx="100" cy="50" r="10" stroke="white" stroke-width="4" fill="#5aabce" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+    </div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. simply dummy text. simply dummy text</p>
+    </div>
+    <div class="flex-container">
+        <div class="flexrow">
+            <img src="images/main-feature.png"/> 
+        </div>
+        <div class="flexrow"> 
+            <img src="images/main-feature.png"/>
+        </div>
+    </div>
+    <div class="line">
+        <svg height="1" width="1">
+            <line x1="10%" y1="1" x2="90%" y2="1"  />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+    </div>
+    <div class="projcontainer">
+        <div class="pres">
+         <h1>NOS PROJETS</h1>
+         <svg width="200" height="100">
+            <line x1="50" y1="50" x2="150" y2="50" style="stroke:rgb(130,130,130);stroke-width:2" />
+	        <circle cx="100" cy="50" r="10" stroke="white" stroke-width="4" fill="#5aabce" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+        </div>
+        <div class="btncont">
+          <button class="filter" onclick="filterSelection('all')">All Works</button>
+          <button class="filter" onclick="filterSelection('nature')"> Creative</button>
+          <button class="filter" onclick="filterSelection('cars')"> Corporate</button>
+          <button class="filter" onclick="filterSelection('people')"> Portfolio</button>
+        </div>
+        <div class="gal">
+        <div class="responsive">
+            <div class="flexrow">
+                <a href="images/portfolio/01.jpg">
+                    <img src="images/portfolio/01.jpg" class="image"/>
+                </a>
+                <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="flexrow">
+                <a href="images/portfolio/02.jpg">
+                    <img src="images/portfolio/02.jpg" class=image""/>
+                </a>
+                <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="flexrow">
+                <a href="images/portfolio/03.jpg">
+                    <img src="images/portfolio/03.jpg" class="image"/>
+                </a>
+                <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="flexrow">
+                <a href="images/portfolio/04.jpg">
+                    <img src="images/portfolio/04.jpg" class="image"/>
+                </a>
+            <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="flexrow">
+                <a href="images/portfolio/05.jpg">
+                    <img src="images/portfolio/05.jpg" class="image"/>
+                </a>
+                <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="flexrow">
+                <a href="images/portfolio/06.jpg">
+                    <img src="images/portfolio/06.jpg" class="image"/>
+                </a>
+                <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="flexrow">
+                <a href="images/portfolio/07.jpg">
+                    <img src="images/portfolio/07.jpg" class="image"/>
+                </a>
+                <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="flexrow">
+                <a href="images/portfolio/08.jpg">
+                    <img src="images/portfolio/08.jpg" class="image"/>
+                </a>
+                <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+    <div class="line">
+        <svg height="1" width="1">
+            <line x1="10%" y1="1" x2="90%" y2="1"  />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+    </div>
+   <div class="footcontainer">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.505217048271!2d2.340915615602131!3d48.88670810666664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e4334868de3%3A0xcfc3870abe2b8519!2zQmFzaWxpa2EgU2FjcsOpLUPFk3Vy!5e0!3m2!1sde!2sde!4v1536713328008" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="contact">
+            <form method="post" action="traitement.php">
+             
+                   <legend>
+                   <h3>Contact Infos</h3>
+                    <p>WebAgency SAS<br>
+                       25 rue d'Hauteville 75010 Paris<br>
+                       Tel: 01 02 03 04 05<br></p>
+                       </legend>
+                   <input type="text" name="name" id="name" placeholder="Name"/>
+                   <input type="email" name="email" id="email" placeholder="Email"/>
+                   <input type="text" name="subject" id="subject" placeholder="Subject"/>
+                   <textarea id="message" name="message" placeholder="Write something.."></textarea>
+                   <input type="submit" value="Send Message" id="btn"/>
+    </form>
+       </div>
+    </div>
+    <div class="line">
+        <svg height="1" width="1">
+            <line x1="10%" y1="1" x2="90%" y2="1"  />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+    </div>
 </div>
+    <script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(48.858093,2.294694),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2Ivb5LKAwZsa94da-tN3Zce3eKnpO4Vc&callback=myMap"></script>
+
+
+        
+        
+    
+    
+    <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+    </script>
 
 </body>
 </html>

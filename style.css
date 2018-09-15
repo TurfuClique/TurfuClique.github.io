@@ -1,0 +1,383 @@
+@font-face {
+    font-family: 'Roboto-Light';
+      src: url('./fonts/Roboto-Light.eot'); /* IE9 Compat Modes */
+      src: url('./fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('./fonts/Roboto-Light.woff2') format('woff2'), /* Super Modern Browsers */
+           url('./fonts/Roboto-Light.woff') format('woff'), /* Pretty Modern Browsers */
+           url('./fonts/Roboto-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+           url('./fonts/Roboto-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body {margin:0;}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+    font-size: 0.8em;
+}
+
+ul.nav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #FFF;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+}
+
+ul.nav li {
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+ul.nav li a {
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 20px;
+    text-decoration: none;
+    margin: 0;
+    line-height: 300%;
+    font-family: Roboto-Light; 
+}
+
+ul.nav li a:hover:not(.active) {border-top: 2px solid #5aabce; padding-top: 18px;}
+
+ul.nav li a.active {border-top: 2px solid #5aabce; padding-top: 18px;}
+
+ul.nav li.right {float: right;}
+
+#logo {
+    display: inline-block;
+    max-height: 40px;
+    float: left;
+    padding: 0px 10px;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px){
+    ul.nav li.right, 
+    ul.nav li {float: none;}
+    #logo {vertical-align: middle;display: block;margin-left: auto;
+    margin-right: auto;float: none;}
+}
+
+.main {
+    margin: 70px 0px 10px 0px;
+    font-family: Roboto-light;
+}
+
+.intro {
+    margin-bottom: 5px;
+}
+
+.slideshow-container {
+    width: 100%;
+    display: block;
+    height: auto;
+    padding: 0px 0px 0px 0px;
+}
+
+.slideshow-container img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px -20px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.line svg {
+    stroke-width: 2;
+    stroke:rgb(155,150,150,0.7);
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    margin: 3% 0%;
+}
+
+.container p{
+    padding: 0 30%;
+    text-align: justify;
+    font-family: Roboto-Light;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+
+.headlines {
+    text-align: center;
+}
+
+.btncont {
+    width: 100%;
+    margin-left: 30%;
+    margin-right:30%;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btncont button {
+    background-color: rgb(210,210,210);
+    height: 50%;
+    width: 100%;
+    margin: 25px auto;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    font-size: 10pt;
+}
+
+.filter:hover {
+    background-color: #5aabce;
+}
+
+.filter:focus {
+    background-color: #5aabce;
+    outline: none;
+}
+
+.projcontainer {
+    text-align: center;
+    display: block;
+}
+
+.pres {
+    text-align: center;
+    display: block;
+}
+
+.pres svg{
+    margin: -30px;
+}
+
+.pres p {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+
+.flex-container {
+    margin: 3% 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.projcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(245,245,242);
+    padding: 20px 20px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.gal {
+    height: 250px;
+    overflow: scroll;
+    padding: 2% 5%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0,0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.flexrow {
+    position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.flexrow:hover .overlay {
+  height: 60%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+div.flexrow img {
+    width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footcontainer {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    border: none;
+    z-index: 0;
+}
+
+.footcontainer iframe {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+.contact form {
+    border: none;
+    background-color: rgba(220, 220, 220,0.8);
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 5%;
+    width: 20%;
+    height: 80%;
+    padding: 10px 10px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.contact legend {
+    height: 15%;
+    margin: 10px 0px;
+    display: inline-block;
+}
+
+.contact legend h3, p {
+    height: 8%;
+    text-align: justify;
+    font-size: 0.7em;
+}
+
+.contact input[type=text], input[type=email], select {
+    width: 100%;
+    padding: 2px 10px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    resize: vertical;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 6px 0;
+    padding: 2px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 35%;
+}
+
+#btn:hover {
+    background-color: #007596;
+}
+
+#btn {
+    padding: 5px;
+    margin: 0px 0px;
+    background-color: rgb(59, 189, 229);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+/* Clear floats after the columns */
+.col:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
