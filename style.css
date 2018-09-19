@@ -2,8 +2,6 @@
     font-family: 'Roboto-Light';
       src: url('./fonts/Roboto-Light.eot'); /* IE9 Compat Modes */
       src: url('./fonts/Roboto-Light.eot?#iefix')              format('embedded-opentype'), /* IE6-IE8 */
-           url('./fonts/Roboto-Light.woff2') format('woff2'), /* Super Modern Browsers */
-           url('./fonts/Roboto-Light.woff') format('woff'), /* Pretty Modern Browsers */
            url('./fonts/Roboto-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
            url('./fonts/Roboto-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
@@ -12,8 +10,6 @@
     font-family: 'Roboto-Black';
       src: url('./fonts/Roboto-Black.eot'); /* IE9 Compat Modes */
       src: url('./fonts/Roboto-Black.eot?#iefix')              format('embedded-opentype'), /* IE6-IE8 */
-           url('./fonts/Roboto-Black.woff2') format('woff2'), /* Super Modern Browsers */
-           url('./fonts/Roboto-Black.woff') format('woff'), /* Pretty Modern Browsers */
            url('./fonts/Roboto-Black.ttf') format('truetype'), /* Safari, Android, iOS */
            url('./fonts/Roboto-Black.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
@@ -22,8 +18,6 @@
     font-family: 'Roboto-Thin';
       src: url('./fonts/Roboto-Thin.eot'); /* IE9 Compat Modes */
       src: url('./fonts/Roboto-Thin.eot?#iefix')              format('embedded-opentype'), /* IE6-IE8 */
-           url('./fonts/Roboto-Thin.woff2') format('woff2'), /* Super Modern Browsers */
-           url('./fonts/Roboto-Thin.woff') format('woff'), /* Pretty Modern Browsers */
            url('./fonts/Roboto-Thin.ttf') format('truetype'), /* Safari, Android, iOS */
            url('./fonts/Roboto-Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
@@ -32,8 +26,6 @@
     font-family: 'Roboto-Bold';
       src: url('./fonts/Roboto-Blod.eot'); /* IE9 Compat Modes */
       src: url('./fonts/Roboto-Bold.eot?#iefix')                format('embedded-opentype'), /* IE6-IE8 */
-           url('./fonts/Roboto-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-           url('./fonts/Roboto-Bold.woff') format('woff'), /* Pretty Modern Browsers */
            url('./fonts/Roboto-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
            url('./fonts/Roboto-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
@@ -61,8 +53,6 @@
     font-family: 'Roboto-Medium';
       src: url('./fonts/Roboto-Medium.eot'); /* IE9 Compat Modes */
       src: url('./fonts/Roboto-Medium.eot?#iefix')              format('embedded-opentype'), /* IE6-IE8 */
-           url('./fonts/Roboto-Medium.woff2') format('woff2'), /* Super Modern Browsers */
-           url('./fonts/Roboto-Medium.woff') format('woff'), /* Pretty Modern Browsers */
            url('./fonts/Roboto-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
            url('./fonts/Roboto-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
@@ -71,8 +61,6 @@
     font-family: 'Roboto-Regular';
       src: url('./fonts/Roboto-Regular.eot'); /* IE9 Compat Modes */
       src: url('./fonts/Roboto-Regular.eot?#iefix')            format('embedded-opentype'), /* IE6-IE8 */
-           url('./fonts/Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-           url('./fonts/Roboto-Regular.woff') format('woff'), /* Pretty Modern Browsers */
            url('./fonts/Roboto-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
            url('./fonts/Roboto-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
@@ -220,7 +208,6 @@ a.anchor {
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  -webkit-user-select: none;
 }
 
 .next {
@@ -429,8 +416,6 @@ svg  circle {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -480,6 +465,7 @@ svg  circle {
 .Map iframe {
     height: 100%;
     width: 100%;
+    border:0;
 }
 
 .Form   {
@@ -502,6 +488,10 @@ svg  circle {
   top: 10%;
 }
 
+.Form fieldset {
+    border: none;
+}
+
 .Form legend {
     line-height: 1.1em;
     display: inline-block;
@@ -517,7 +507,7 @@ svg  circle {
     font-family: Roboto-Bold;
     text-align: justify;
     font-size: 1.5em;
-    color: rgba(0,0,0);
+    color: rgb(0,0,0);
     margin-left: 5%;
 }
 
@@ -575,6 +565,7 @@ svg  circle {
 .Map iframe {
     height: 100%;
     width: 100%;
+    border: 0;
 }
 
 
@@ -596,7 +587,6 @@ svg  circle {
     background-color: #EFF5F7;
     border-color: #696;
     opacity: 0.8;
-    overflow:;
 }
 
 #map {
@@ -623,7 +613,7 @@ svg  circle {
     font-family: Roboto-Bold;
     text-align: justify;
     font-size:1.5em;
-    color: rgba(0,0,0);
+    color: rgb(0,0,0);
     margin-left: 5%;
 }
 
