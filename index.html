@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Open Graph data -->
     <meta property="og:title" content="WebAgency - Future Digital Marketing"/>
     <meta property="og:type" content="website"/>
@@ -23,6 +23,9 @@
     <meta property="og:image" content="http://example.com/image.jpg"/>
     <meta property="og:description" content="Description Here"/>
     <!-- Assets -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -32,52 +35,63 @@
             <li class="right"><a href="#portfolio">Portfolio</a></li>
             <li class="right"><a href="#serv">Services</a></li>
             <li class="right"><a class="active" href="#acceuil">Acceuil</a>  </li>
-            <li><a href="home"><img src="images/logo.png" alt="Logo" id="logo"/></a></li>
+            <li><a href="home" id="loogo"><img src="images/logo.png" alt="Logo" id="logo"/></a></li>
          </ul>
     </div>
     <a class="anchor" id="acceuil"></a>
     <div class="main">
         <div class="slideshow-container">
+            <a class="prev round" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next round" onclick="plusSlides(1)">&#10095;</a>
             <div class="intro">
-                <h1><span id="wa">WEBAGENCY </span>: L'AGENCE DE TOUS <br> VOS PROJETS!</h1>
+                <h1><span id="wa">WEBAGENCY </span>: L'AGENCE DE TOUS<br> VOS PROJETS!</h1>
                 <p>Vous avez un projet web? La webAgency vous aide à le réaliser!</p>
                 <a href="plusdinfos">Plus d'infos</a>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>    
     <a class="anchor" id="serv"></a>
     <div class="headlines">
         <h1>NOS SERVICES</h1>
-        <svg width="200" height="50">
-            <line x1="25" y1="25" x2="175" y2="25" />
-	        <circle cx="100" cy="25" r="9"/>
+        <svg width="200" height="30">
+            <line x1="25" y1="15" x2="175" y2="15" />
+            <circle cx="100" cy="15" r="8"/>
         </svg>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. simply dummy text. simply dummy text</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and</p>
     </div>
     <div id="flex-container" >
         <div class="flex-row">
             <img src="images/main-feature.png" alt="Nos Services"/> 
         </div>
         <div class="flex-row"> 
-           <p>hjfhskhvjkdjkjvlkjslvjls</p>
+                <div id="courcont">
+                    <img src="./try.svg" id="stat">
+                    <p><span>UX DESIGN</span><br>bfhjsdbfhjsd bfhsdbfhbsdjfbsjh jhjhd jksqdhgjqks hdjkhqkshkdjq<br>jdhkjqhkj dhqsjkdhsqkhdjkqshdjkqshdjqshjkdqkhjdqshkd hkq sdjhqs</p>
+                </div>
+                <div id="courcont">
+                    <img src="./cubes.svg" id="cube">
+                    <p><span>UI DESIGN</span><br>bfhjsdbfhjsdbfhsdbfhbsdjfbsjhjhjhdjksqdhgjqkshdjkhqksjdhkjqshkdjq<br>jdhkjqhkjdhqsjkdhsqkhdjkqshdjkqshdjqshjkdqkhjdqshkdhkqsdjhqs</p>
+                </div>
+                <div id="courcont">
+                    <img src="./pie.svg" id="pie">
+                    <p><span>SEO</span> <br>bfhjsdbfhjsdbfhsdbfhbsdjfbsjhjhjhdjksqdhgjqkshdjkhqksjdhkjqshkdjq<br>jdhkjqhkjdhqsjkdhsqkhdjkqshdjkqshdjqshjkdqkhjdqshkdhkqsdjhqs</p>
+                </div>
         </div>
     </div>
     <a class="anchor" id="portfolio"></a>
     <div class="projcontainer">
         <div class="pres">
             <h1>NOS PROJETS</h1>
-            <svg width="200" height="50">
-                <line x1="25" y1="25" x2="175" y2="25" />
-	            <circle cx="100" cy="25" r="9"/>
+            <svg width="200" height="30">
+                <line x1="25" y1="15" x2="175" y2="15" />
+	            <circle cx="100" cy="15" r="8"/>
              </svg>
-             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and  </p>
         </div>
         <div class="btncont">
-            <a href="">All Works</a>
-            <a href=""> Creative</a>
-            <a href=""> Corporate</a>
-            <a href=""> Portfolio</a>
+            <a class="act"><span id="activ"></span>All Works</a>
+            <a>Creative</a>
+            <a>Corporate</a>
+            <a class="last">Portfolio</a>
         </div>
         <div class="gal">
             <div class="responsive">
@@ -85,7 +99,7 @@
                     <a href="images/portfolio/01.jpg">
                         <img src="images/portfolio/01.jpg" class="image" alt="Works"/>
                     </a>
-                    <div class="overlay">
+                    <div class="overlay circle">
                         <div class="text">Hello World</div>
                     </div>
                 </div>
@@ -95,27 +109,27 @@
                     <a href="images/portfolio/02.jpg">
                         <img src="images/portfolio/02.jpg" class="image" alt="Works"/>
                     </a>
-                <div class="overlay">
-                    <div class="text">Hello World</div>
-                </div>
-            </div>
-        </div>
-        <div class="responsive">
-            <div class="flexrow">
-                <a href="images/portfolio/03.jpg">
-                    <img src="images/portfolio/03.jpg" class="image" alt="Works"/>
-                </a>
-                <div class="overlay">
+                    <div class="overlay circle">
                         <div class="text">Hello World</div>
                     </div>
+                </div>
             </div>
-        </div>
-        <div class="responsive">
-            <div class="flexrow">
-                <a href="images/portfolio/04.jpg">
-                    <img src="images/portfolio/04.jpg" class="image" alt="Works"/>
-                </a>
-                <div class="overlay">
+            <div class="responsive">
+                <div class="flexrow">
+                    <a href="images/portfolio/03.jpg">
+                        <img src="images/portfolio/03.jpg" class="image" alt="Works"/>
+                    </a>
+                    <div class="overlay circle">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="flexrow">
+                    <a href="images/portfolio/04.jpg">
+                        <img src="images/portfolio/04.jpg" class="image" alt="Works"/>
+                    </a>
+                <div class="overlay circle">
                     <div class="text">Hello World</div>
                 </div>
             </div>
@@ -125,7 +139,7 @@
                 <a href="images/portfolio/05.jpg">
                     <img src="images/portfolio/05.jpg" class="image" alt="Works"/>
                 </a>
-                <div class="overlay">
+                <div class="overlay circle">
                     <div class="text">Hello World</div>
                 </div>
             </div>
@@ -135,7 +149,7 @@
                 <a href="images/portfolio/06.jpg">
                     <img src="images/portfolio/06.jpg" class="image" alt="Works"/>
                 </a>
-                <div class="overlay">
+                <div class="overlay circle">
                     <div class="text">Hello World</div>
                 </div>
             </div>
@@ -145,7 +159,7 @@
                 <a href="images/portfolio/07.jpg">
                     <img src="images/portfolio/07.jpg" class="image" alt="Works"/>
                 </a>
-                <div class="overlay">
+                <div class="overlay circle">
                     <div class="text">Hello World</div>
                 </div>
             </div>
@@ -155,33 +169,50 @@
                 <a href="images/portfolio/08.jpg">
                     <img src="images/portfolio/08.jpg" class="image" alt="Works"/>
                 </a>
+                
                 <div class="overlay">
-                    <div class="text">Hello World</div>
+                   <div class="ico"><em class="far fa-eye fa-stack-1x ey"></em></div>
+                    <div class="text"><p>Hello World</p></div>
                 </div>
             </div>
         </div>
     </div> 
 </div>
     <a class="anchor" id="contact"></a>
-    <div id="map" class="Map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.505217048271!2d2.340915615602131!3d48.88670810666664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e4334868de3%3A0xcfc3870abe2b8519!2zQmFzaWxpa2EgU2FjcsOpLUPFk3Vy!5e0!3m2!1sde!2sde!4v1536713328008" width="600" height="450" allowfullscreen></iframe>
-        <div id="formm" class="Form">
+<div class="footer">
+   <div class="ggwrap">
+    <section id="carte">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.505217048271!2d2.340915615602131!3d48.88670810666664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e4334868de3%3A0xcfc3870abe2b8519!2zQmFzaWxpa2EgU2FjcsOpLUPFk3Vy!5e0!3m2!1sde!2sde!4v1536713328008" width="100%" height="100%" allowfullscreen></iframe>    
+    </section>
+    <div id="mapover"></div>
+    </div>
+    <section id="contact">
             <form method="post" action="traitement.php">
                <fieldset>
                 <legend>
-                    <h3>Contact Infos</h3>
+                    <h3>Contact Info</h3>
                     <p><span id="comp">WebAgency SAS</span><br>
                        25 rue d'Hauteville 75010 Paris<br>
                        Tel: 01 02 03 04 05<br></p>
                 </legend>
-                </fieldset>
+                <div>
                 <input type="text" name="name" id="name" placeholder="Name"/>
+                </div>
+                <div>
                 <input type="email" name="email" id="email" placeholder="Email"/>
+                </div>
+                <div>
                 <input type="text" name="subject" id="subject" placeholder="Subject"/>
-                <textarea id="message" name="message" placeholder="Message" rows="12"></textarea>
-                <input type="submit" value="Send Message" id="btn"/>
+                </div>
+                <div>
+                <textarea id="message" name="message" placeholder="Message" rows="10"></textarea>
+                </div>
+                <div>
+                <input type="submit" value="Send Message" class="btn"/>
+                </div>
+                </fieldset>
             </form>
-        </div>
+        </section>
     </div>
 </div>
 </body>
