@@ -67,12 +67,13 @@
 
 * {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .navbar {
@@ -336,10 +337,115 @@ svg line {
     stroke-width:0.5px;
 }
 
+
+@media screen and (max-width: 600px){
+
+.headlines {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.headlines h1{
+    margin: 0% 0% 5%;
+    font-family: Roboto-Bold;
+    font-size: 2.5em;
+}
+    
+.headlines p{
+    font-family: Roboto-Regular;
+    font-size: 1em;
+    color:rgb(110,110,110);
+    text-align: center;
+    margin:3% auto;
+} 
+
+#flex-container {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+.flex-row:nth-child(1) {
+    flex:1;
+    justify-content:center;
+    align-items:center;
+    margin:2% auto;
+    align-content: center;
+}
+
+    
+.flex-row:nth-child(2) {
+    flex:1;
+}
+
+#courcont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+#courcont span {
+    margin: 0% auto;
+    font-family: Roboto-Bold;
+    color:#000;
+    line-height: 2em;
+}
+
+#courcont  * {
+    margin: 2% auto;
+}
+    
+#courcont p {
+    font-family: Roboto-Regular;
+    color:rgb(110,110,110);
+    font-size:1em;
+    margin: 0% auto 5%;
+    justify-content:center;
+    align-content:center;
+    padding: 0% 5% 5%;
+    }
+
+#stat {
+    width : 20vw;
+}
+
+#cube {
+    width : 20vw;
+}
+
+#pie {
+    width : 20vw;
+    }
+}
+
 svg  circle {
     stroke:white;
     stroke-width:2px;
     fill:#45AED6;
+}
+
+.pres {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.pres h1{
+    margin: 0% 0% 5%;
+    font-family: Roboto-Bold;
+    font-size: 2.5em;
+}
+
+.pres p {
+    width: 100%;
+    text-align: justify;
+    font-family: Roboto-Regular;
+    color:rgb(110,110,110);
+    margin: auto;
+    padding: 0 20%;
+    text-align: center;
 }
 
 .btncont {
@@ -367,14 +473,6 @@ svg  circle {
     font-family: Roboto-Regular;
     color: rgb(126,126,126);
     position: relative;
-}
-
-#acti {
-    background-color: #5aabce;
-    color: white;
-    border-bottom: 2px solid #4494BB;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
 }
 
 .btncont, a.last {
@@ -410,79 +508,70 @@ a.act {
 }
 
 @media screen and (max-width: 600px) {
-    .headlines p{
-        padding: 0 10%;
-        font-family: Roboto-Regular;
-        font-size: 1em;
-        color:rgb(110,110,110);
-        text-align: center;
-        margin:auto;
-    }    
-}
-
+    
 .pres {
     width: 100%;
+    margin: 0% auto 5%;
+    padding: 5% 0%;
 }
     
 .pres h1 {
-    padding: 0% 0% 1%;
-    margin: 0;
+    margin: 0% 0% 5%;
     font-family: Roboto-Bold;
-    font-size:3em;
+    font-size: 2.5em;
 }
-
+    
 .pres p {
-    width: 100%;
-    text-align: justify;
     font-family: Roboto-Regular;
+    font-size: 1em;
     color:rgb(110,110,110);
-    margin: auto;
-    padding: 0 20%;
     text-align: center;
+    margin:3% auto;
 }
 
-@media screen and (max-width: 600px) {
-    .btncont {
-        margin-top: 2vh;
-        width: 100%;
-        margin-left: 10%;
-        margin-right:10%;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        vertical-align: middle;
-        border:none;
-    }
-    
-    .btncont a {
-        background-color: rgb(210,210,210);
-        line-height: 5vh;
-        width: 100%;
-        margin: 0px auto;
-        display: inline-block;
-        overflow: hidden;
-        text-align: center;
-        font-size: 1em;
-        text-decoration: none;
-        border: none;
-        font-family: Roboto-Medium;
-        color: rgb(126,126,126);
-    }
-    
-    .pres h1 {
-        padding: 0;
-        margin: 0;
-        font-family: Roboto-Bold;
-        font-size:2em;
+.btncont {
+    padding:0% auto;
+    margin:0% auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    vertical-align: middle;
+    border:none;
 }
-
-    .pres p {
-        width: 100%;
-        text-align: center;
-        font-family: Roboto-Regular;
-        color:rgb(110,110,110);
-        margin: auto;
-        padding: 0 10%;
+    
+.btncont a {
+    width:55%;
+    background-color: rgb(210,210,210);
+    line-height: 2vh;
+    margin: 0px auto;
+    padding: 0% auto;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    border: none;
+    font-family: Roboto-Medium;
+    color: rgb(126,126,126);
+}
+    
+#activ {
+    position: absolute;
+    left: 50%;
+    top: 4.5vh;
+    text-align: center;
+	border-left: 1vw solid transparent;
+	border-right: 1vw solid transparent;
+	border-top: 2vh solid #5CADD3;
+    width:0;
+    height:0;   
+}
+    
+a.act {
+    background-color: #5CADD3;
+    outline: none;
+    border-bottom: 1px solid 5CADD3;
+    color: white;
     }
 }
 
@@ -528,6 +617,7 @@ a.act {
 .flexrow img {
     width: 100%;
     height: auto;
+
 }
 
 .overlay {
@@ -542,37 +632,23 @@ a.act {
     transition: .5s ease;
 }
 
-.ey {
+.ico {
     position: absolute;
-    padding-top: 15px;
+    top: -25%;
+    right: 5%;
     overflow: visible;
-    border-radius: 30px;
-    width:40px;
-    height: 40px;
-    background-color: aqua;
-    right:0;
 }
 
-
-/*.overlay:after {
-    position: absolute;
-    display: block;
-    top: 0;
-    right: 0;
-    font-family: "FontAwesome";
-    content: "\f06e";
+.ico .bt {
+    background-color: #4DA1B1;
+    border: 2px solid white;
     color: white;
+    padding: 12px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: visible;
 }
-
-.circle:after {
-    position: absolute;
-    content: "\f111";
-    display: block;
-    top: 0;
-    right: 0;
-    font-family: "FontAwesome";
-    color: transparent;
-} */
 
 .text {
     color: white;
@@ -587,6 +663,7 @@ a.act {
 .flexrow:hover .overlay {
     height: 40%;
     width:100%;
+    overflow: visible;
 }
 
 .responsive {
@@ -595,11 +672,35 @@ a.act {
     width: 24.99999%;
 }
 
+
 @media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
+    
+.projcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(245,245,242);
+    padding: 5% 0%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.gal {
+    padding: 2vh 5vw 0vh 1vw;
+    
+}
+
+.flexrow {
+    position: relative;
+}
+
+.flexrow img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -723,103 +824,80 @@ a.act {
 }
 
 @media screen and (max-width: 600px) {
-    .footer {
-        width:100%;
+.footer {
+    position: relative;
+    box-sizing: border-box;
 }
 
-    #carte iframe {
-        width: 100vw;
-        height: 65vh;
+.carte {
+    position: absolute;
+    top:0;
+    left:0;
+    border:0;
+    max-height:400px;
+    width:100%;
+}
+    
+iframe {
+    border:0;
+}
+    
+
+    
+.inlin {
+    
+}
+    
+
+
+#comp {
+    font-family: Roboto-Medium;
+    color: rgb(100,100,100);
 }
 
-    #contact {
-        position: static;
-        width: 100vw;
-        height:70vh;
-        margin:0;
-        box-sizing: border-box;
-        bottom: 0;
-        overflow: hidden;
+.inlin legend h3 {
+    font-family: Roboto-Bold;
 }
 
-    #contact form {
-        background-color: rgba(220,220,220,0.8);
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0 3%;
+.inlin legend p {
+    color: #64686D;
+    font-family: Roboto-Regular;
 }
 
-    #contact fieldset {
-        border: none;
-        padding: 0%;
-        margin:0%;
+.inlin input[type=text], input[type=email] {
+    margin-top: 3%;
+    font-size: 1em;
+    font-family: Roboto-Light;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    padding: 2% 3%;
 }
 
-    #comp {
-        font-family: Roboto-Medium;
-        color: rgb(100,100,100);
+.inlin textarea {
+    border: 1px solid #ccc;
+    background-color: white;
+    font-family: Roboto-Light;
+    font-size: 1em;
+    margin-top: 3%;
+    border-radius: 6px;
+    padding: 2% 3%;
 }
 
-    #contact legend {
-        width:100%;
-        padding: 0%;
+.btn:hover {
+    background-color: #007596;
 }
 
-    #contact legend h3 {
-        font-family: Roboto-Bold;
-        font-size: 1.7em;
-        margin: 3% 0 2%;
-}
-
-    #contact legend p {
-        max-height: 10vh;
-        width: 100%;
-        color: #64686D;
-        font-family: Roboto-Regular;
-        box-sizing: border-box;
-        margin: 0%;
-}
-
-    #contact input[type=text], input[type=email] {
-        width: 100%;
-        display: block;
-        margin-top: 3%;
-        font-size: 1em;
-        font-family: Roboto-Light;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        box-sizing: border-box;
-        background-color: white;
-        padding: 2% 3%;
-}
-
-    #contact textarea {
-        border: 1px solid #ccc;
-        display: block;
-        background-color: white;
-        font-family: Roboto-Light;
-        font-size: 1em;
-        width: 100%;
-        margin-top: 3%;
-        border-radius: 6px;
-        padding: 2% 3%;
-        box-sizing: border-box;
-}
-
-    .btn:hover {
-        background-color: #007596;
-}
-
-    .btn {
-        margin: 3% 0%;
-        width:100%;
-        background-color: #45AED6;
-        border-bottom: 4px solid #4494BB;
-        color: white;
-        font-family: Roboto-Regular;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 1em;
-        padding: 1% 2%;
+.btn {
+    margin: 3% 0%;
+    width:100%;
+    background-color: #45AED6;
+    border-bottom: 4px solid #4494BB;
+    color: white;
+    font-family: Roboto-Regular;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 1% 2%;
     }
 }
