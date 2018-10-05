@@ -420,12 +420,13 @@ svg  circle {
     padding:0% 30%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
 }
 
 
 .butt {
-    width: 100%;
+    width: 25%;
+    display: inline-block;
     background-color: rgba(210,210,210,0.7);
     text-align: center;
     vertical-align: middle;
@@ -438,7 +439,6 @@ svg  circle {
 
 
 .mainselected {
-    width: 100%;
     background-color: #5CADD3;
     text-align: center;
     vertical-align: middle;
