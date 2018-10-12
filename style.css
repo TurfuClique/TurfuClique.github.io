@@ -698,7 +698,7 @@ ul.nav li.right, ul.nav li {
 ul.nav li a {
     line-height: 0.5vh;}
 .navbar {
-    position: fixed;
+    position: relative;
     width: 100%;
     margin-bottom: 0%;
     padding-bottom: 0%;
@@ -706,7 +706,6 @@ ul.nav li a {
     left:0;
     height: 40vh;
     overflow: hidden;
-    z-index: 2;
     font-size: 0.8em;
     }
 }
@@ -719,7 +718,6 @@ ul.nav li a {
 }
     .main {
         position:relative;
-        top:30vh;
     }
 }
 
@@ -832,7 +830,7 @@ ul.nav li a {
     margin:3% auto;
 } 
 
-#flex-container {
+.flex-container {
     width:100%;
     display: flex;
     flex-wrap: wrap;
@@ -923,13 +921,13 @@ ul.nav li a {
     flex-wrap: wrap;
     text-align: center;
     vertical-align: middle;
-    flex-direction: row;
+    flex-direction: column;
     border:none;
 }
     
-.btncont a {
+.butt {
     background-color: rgb(210,210,210);
-    width:25%;
+    width:100%;
     margin: 0px auto;
     padding: 0%;
     display: inline-block;
@@ -943,19 +941,14 @@ ul.nav li a {
 }
     
 
-a.mainselected {
+.mainselected {
     background-color: #5CADD3;
     text-align: center;
     vertical-align: middle;
     position: relative;
     color: white;
     border-bottom: 1px solid #468CAD;
-}
-
-a.mainselected:after {
-    visibility: hidden;
-    display: none;
-}
+    }
 }
     
 
