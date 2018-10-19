@@ -293,7 +293,7 @@ a.anchor {
 }
 
 .post {
-    height: 100px;
+    height: 50px;
 }
 
 .headlines {
@@ -339,7 +339,7 @@ a.anchor {
 .courcont {
     display: flex;
     flex-wrap: nowrap;
-        font-size: 1em;
+    font-size: 1em;
     font-family: Roboto-Regular;
     color:rgb(110,110,110);
 }
@@ -363,10 +363,12 @@ a.anchor {
 }
 
 
+.fa-circle-thin {
+    color: rgb(210,210,210);   
+}
 
-#stat {
-    width:10%;
-    height:10%;
+.fa-stack-1x {
+    color: #45AED6;
 }
 
 #cube {
@@ -698,7 +700,6 @@ ul.nav li.right, ul.nav li {
 ul.nav li a {
     line-height: 0.5vh;}
 .navbar {
-    position: relative;
     width: 100%;
     margin-bottom: 0%;
     padding-bottom: 0%;
@@ -708,17 +709,8 @@ ul.nav li a {
     overflow: hidden;
     font-size: 0.8em;
     }
-}
+    
 
-@media screen and (max-width: 600px){
-    body {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-    .main {
-        position:relative;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -726,11 +718,26 @@ ul.nav li a {
         position: relative;
         display: block;
         visibility: visible;
+        background: url(images/cta2/cta2-bg.jpg);
+        background-size: contain;
     }
+
     
-    .intro {
-        font-size: 0.1em;
-    }
+    .intro a {
+    background-color: #5CADD3;
+    margin-top: 1%;
+    text-align: center;
+    color: white;
+    float: left;
+    font-size: 1em;
+    font-family: Roboto-Medium;
+    padding: 10px 12px;
+    border-radius: 0.2em;
+    text-decoration: none;
+    border-bottom: 0.2em solid #2995BE;
+    width:23%;
+    overflow: hidden;
+}
 }
 
 @media only screen and (min-width: 992px) {
@@ -918,6 +925,7 @@ ul.nav li a {
     margin:0% auto;
     padding: 0% auto;
     display: flex;
+    padding:0% 0%;
     flex-wrap: wrap;
     text-align: center;
     vertical-align: middle;
@@ -929,7 +937,7 @@ ul.nav li a {
     background-color: rgb(210,210,210);
     width:100%;
     margin: 0px auto;
-    padding: 0%;
+    padding: 0.5em;
     display: inline-block;
     overflow: hidden;
     text-align: center;
@@ -999,10 +1007,6 @@ ul.nav li a {
     height: auto;
     overflow: hidden;
 }
-
-}
-
-@media only screen and (max-width: 600px) {
     .responsive {
         width: 100%;
     }  
