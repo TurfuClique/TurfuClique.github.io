@@ -75,7 +75,7 @@
 
 body {
     margin: auto auto;
-    padding: 1% 1%;
+    padding:0;
     height: 100%;
     overflow-x: hidden;
 }
@@ -145,14 +145,6 @@ ul.nav li.right {
     margin: 0;
 }
 
-.main {
-    position: absolute;
-    top:80px;
-    left:0;
-    overflow-x: hidden;
-    margin:0;
-}
-
 a.anchor {
     position: relative;
     top: -120px;
@@ -161,6 +153,10 @@ a.anchor {
 
 #wa {
     color: #45AED6;
+}
+
+.container {
+    margin-top: 100px;
 }
 
 .slideshow-container {
@@ -233,6 +229,7 @@ a.anchor {
     top: calc(50% - 20px);
     left:-50px;
     color:white;
+    cursor:pointer;
 }
 
 .next {
@@ -243,6 +240,7 @@ a.anchor {
     background-size: 100% 2%;
     background-repeat: no-repeat;
     background-origin: content-box;
+    cursor:pointer;
 }
 
 .intro {
@@ -294,6 +292,18 @@ a.anchor {
 
 .post {
     height: 50px;
+}
+
+svg line {
+    stroke:rgb(110,110,110);
+    stroke-width:0.5px;
+}
+
+
+svg  circle {
+    stroke:white;
+    stroke-width:4px;
+    fill:#45AED6;
 }
 
 .headlines {
@@ -363,7 +373,7 @@ a.anchor {
 }
 
 
-.fa-circle-thin {
+.fa-circle-o-notch {
     color: rgb(210,210,210);   
 }
 
@@ -379,18 +389,6 @@ a.anchor {
 #pie {
     width : 10%;
     height: 10%;
-}
-
-svg line {
-    stroke:rgb(110,110,110);
-    stroke-width:0.5px;
-}
-
-
-svg  circle {
-    stroke:white;
-    stroke-width:4px;
-    fill:#45AED6;
 }
 
 .pres {
@@ -433,10 +431,10 @@ svg  circle {
     text-align: center;
     vertical-align: middle;
     color:rgb(100,100,100);
-    position: relative;
     border:none;
     font-size: 1em;
     padding:1em;
+    cursor:pointer;
 }
 
 
@@ -503,14 +501,16 @@ svg  circle {
 
 .overlay {
     position: absolute;
-    bottom: 0;
+    bottom:1%;
     left: 0;
-    right: 0;
     background-color: rgba(0, 0, 0,0.7);
     overflow: hidden;
+    display: flex;
     width: 100%;
     height: 0;
     transition: .5s ease;
+    outline:none;
+    border: 0;
 }
 
 .ico {
@@ -708,28 +708,34 @@ ul.nav li a {
     height: 40vh;
     overflow: hidden;
     font-size: 0.8em;
+    position: absolute;
     }
-    
-
 }
 
 @media screen and (max-width: 600px) {
-    
-.main {
-    top:40vh;
-    left:0;
-    overflow-x: hidden;
-    margin:0;
+
+#show {
+
 }
     
+.container {
+    margin-top: 230px;
+}
+
 .slideshow-container {
+    max-width: 100%;
     position: relative;
-    display: block;
-    visibility: visible;
-    background-image: url("./images/slider/bg1.jpg");
-    background-size: contain;
+    height:358px;
+    background-image: url(images/slider/bg1.jpg);
+    background-size: cover;
+    background-position: 55%;
     background-repeat: no-repeat;
-    background-position:center center;
+    margin: auto;
+    box-sizing: border-box;
+}    
+    
+.slideshow-container img {
+    display: none;
 }
 
 .slider {
@@ -742,7 +748,7 @@ ul.nav li a {
     -webkit-transition: .2s;
     transition: opacity .2s;
     position: absolute;
-    bottom: -5%;
+
 }
 
 .slider:hover {
@@ -775,7 +781,7 @@ ul.nav li a {
 .slider_nav {
     background: rgba(25, 25, 25, 0.4);
     display: inline-block;
-    padding: 5px 12px 5px 10px;
+    padding: 5px 15px 5px 10px;
     border-radius: 40%;
     border-right: 0;
     position: absolute;
@@ -783,14 +789,14 @@ ul.nav li a {
 }
 
 .prev {
-    padding: 5px 5px 10px 25px;
+    padding: 10px 5px 10px 50px;
     top: calc(50% - 20px);
     left:-50px;
     color:white;
 }
 
 .next {
-    padding: 20px 50px 20px 10px;
+    padding: 10px 40px 10px 5px;
     top: calc(50% - 20px);
     right: -40px;
     color:white;
@@ -801,25 +807,27 @@ ul.nav li a {
 
 .intro {
     color: white;
-    font-size:1em;
-    width:40%;
-    height: ;
     margin: 0;
     padding:1% 1%;
     position: absolute;
     top: 45%;
-    left: 23%;
+    left: 16%;
     -ms-transform: translate(-23%, -50%);
     transform: translate(-23%, -50%);
     overflow:hidden;
     clear:both;
+    font-size: 12pt;
 }
 
 .intro h1 {
     color: white;
     font-family: Roboto-Bold;
-    font-size:1em;
+    font-size: 1.5em;
 }
+
+.intro p {
+    font-family: Roboto-Regular;
+}    
     
 .intro a {
     background-color: #5CADD3;
@@ -827,17 +835,18 @@ ul.nav li a {
     text-align: center;
     color: white;
     float: left;
-    font-size: 1em;
     font-family: Roboto-Medium;
-    padding: 10px 12px;
+    padding: 12px 16px;
     border-radius: 0.2em;
     text-decoration: none;
     border-bottom: 0.2em solid #2995BE;
     width:23%;
     overflow: hidden;
+    font-size: 1em;
 }
     
 }
+
 @media only screen and (min-width: 992px) {
     .intro {
     color: white;
@@ -885,7 +894,7 @@ ul.nav li a {
 }
 
 @media only screen and (min-width: 992px){
-    .flex-row:nth-child(1) {
+.flex-row:nth-child(1) {
     margin-left:0%; 
     flex:1;
 }
@@ -914,6 +923,7 @@ ul.nav li a {
     padding-right:5%;
 }
 }
+
 @media screen and (max-width: 600px){
 
 .headlines {
@@ -921,7 +931,7 @@ ul.nav li a {
     text-align: center;
 }
 
-.headlines h1{
+.headlines h2{
     margin: 0% 0% 5%;
     font-family: Roboto-Bold;
     font-size: 2.5em;
@@ -942,35 +952,31 @@ ul.nav li a {
     flex-direction:column;
     align-items:center;
     justify-content: center;
+    padding:0;
+    margin:0;
 }
 .flex-row:nth-child(1) {
     flex:1;
-    justify-content:center;
-    align-items:center;
-    margin:2% auto;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
     align-content: center;
 }
 
     
 .flex-row:nth-child(2) {
-    flex:1;
-     margin:2% auto;
+    flex: 1;
+     margin: 2% auto;
 }
 
 .courcont {
     display: flex;
     flex-wrap: wrap;
-}
-
-.doms {
-    margin: 0%;
-    font-family: Roboto-Bold;
-    color:#000;
-    line-height: 2em;
+    padding: 1%;
 }
 
 .courcont  * {
-    margin: 2% auto;
+    margin: 5% auto;
 }
     
 .courcont p {
@@ -980,24 +986,9 @@ ul.nav li a {
     margin: 0% auto 5%;
     justify-content:center;
     align-content:center;
-    padding: 0% 5% 5%;
-    }
-
-#stat {
-    width : 20vw;
+    padding: 5% 5% 5%;
 }
-
-#cube {
-    width : 20vw;
-}
-
-#pie {
-    width : 20vw;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    
+   
 .pres {
     width: 100%;
     margin: 0% auto 5%;
@@ -1019,16 +1010,16 @@ ul.nav li a {
 }
 
 .btncont {
-    width:100%;
-    margin:0% auto;
-    padding: 0% auto;
+    width: 100%;
+    margin: 0% auto;
+    padding: 0%;
     display: flex;
-    padding:0% 0%;
+    padding: 0% 0%;
     flex-wrap: wrap;
     text-align: center;
     vertical-align: middle;
     flex-direction: column;
-    border:none;
+    border: none;
 }
     
 .butt {
@@ -1198,6 +1189,283 @@ ul.nav li a {
     font-size: 1em;
     padding: 1% 2%;
     }
+}
+
+@media only screen and (min-width: 768px) {
+    .intro {
+    color: white;
+
+    width:70%;
+    margin: 0;
+    padding:1% 1%;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    -ms-transform: translate(-23%, -50%);
+    transform: translate(-23%, -50%);
+    overflow:hidden;
+    clear:both;
+
+}
+
+.intro h1 {
+    color: white;
+    font-family: Roboto-Bold;
+    font-size: 1.5em;
+}
+
+.intro p {
+    font-family: Roboto-Regular;
+}    
+    
+.intro a {
+    background-color: #5CADD3;
+    margin-top: 1%;
+    text-align: center;
+    color: white;
+    float: left;
+    font-family: Roboto-Medium;
+    padding: 2px 6px;
+    border-radius: 0.2em;
+    text-decoration: none;
+    border-bottom: 0.2em solid #2995BE;
+    width:23%;
+    overflow: hidden;
+}
+    
+.headlines {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.headlines h2{
+    margin: 0% 0% 5%;
+    font-family: Roboto-Bold;
+    font-size: 2.5em;
+}
+    
+.headlines p{
+    font-family: Roboto-Regular;
+    font-size: 1em;
+    color:rgb(110,110,110);
+    text-align: center;
+    margin:3% auto;
+} 
+
+.flex-container {
+    width:100%;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+.flex-row:nth-child(1) {
+    flex:1;
+    justify-content:center;
+    align-items:center;
+    margin:2% auto;
+    align-content: center;
+}
+
+    
+.flex-row:nth-child(2) {
+    flex:1;
+     margin:2% auto;
+}
+
+.courcont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.doms {
+    margin: 0%;
+    font-family: Roboto-Bold;
+    color:#000;
+    line-height: 2em;
+}
+
+.courcont  * {
+    margin: 2% auto;
+}
+    
+.courcont p {
+    font-family: Roboto-Regular;
+    color:rgb(110,110,110);
+    font-size:1em;
+    margin: 0% auto 5%;
+    justify-content:center;
+    align-content:center;
+    padding: 0% 5% 5%;
+    text-align: center;
+    }
+
+#stat {
+    width : 20vw;
+}
+
+#cube {
+    width : 20vw;
+}
+
+#pie {
+    width : 20vw;
+    }
+    
+.pres {
+    width: 100%;
+    margin: 0% auto 5%;
+    padding: 5% 0%;
+}
+    
+.pres h2 {
+    margin: 0% 0% 5%;
+    font-family: Roboto-Bold;
+    font-size: 2.5em;
+}
+    
+.pres p {
+    font-family: Roboto-Regular;
+    font-size: 1em;
+    color:rgb(110,110,110);
+    text-align: center;
+    margin:3% auto 0%;
+}
+
+.btncont {
+    width:100%;
+    margin:2% 20% 5%;
+    padding: 0% ;
+    display: flex;
+    padding:0% 0%;
+    flex-wrap: wrap;
+    text-align: center;
+    vertical-align: middle;
+    flex-direction: row;
+    border:none;
+}
+    
+.butt {
+    background-color: rgb(210,210,210);
+    width:25%;
+    margin: 0px auto;
+    padding: 0.5em;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    border: none;
+    font-family: Roboto-Medium;
+    color: rgb(126,126,126);
+}
+    
+
+.mainselected {
+    background-color: #5CADD3;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    color: white;
+    border-bottom: 1px solid #468CAD;
+    }
+    
+.footer {
+    margin: 0% auto;
+    padding: 0%;
+    width:100%;
+}
+
+.ggwrap {
+    position: relative;
+}
+
+.carte {
+    margin:0% auto; 
+    width: 100%;
+    max-height: 550px;
+}
+
+#mapover {
+    width  : 100%;
+    height : 100%;
+    background: #98C7F0;
+    position: absolute;
+    opacity: 0.5;/*add this*/
+    top: 0px; 
+    left: 0px; 
+}
+
+.carte iframe {
+    border:0;
+}
+    
+.contact {
+    position: relative;
+    width:100%;
+    right:0%;
+    padding:0;
+    font-size: 1.5rem;
+}
+ 
+
+#comp {
+    font-family: Roboto-Medium;
+    color: rgb(100,100,100);
+}
+
+.inlin legend h3 {
+    font-family: Roboto-Bold;
+    text-align: center;
+}
+
+.inlin legend h4 {
+    text-align: center;
+    justify-content: center;
+    color: #64686D;
+    font-family: Roboto-Regular;
+}
+
+.inlin input[type=text], input[type=email] {
+    margin-top: 3%;
+    font-size: 1em;
+    font-family: Roboto-Light;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    padding: 2% 3%;
+}
+
+.inlin textarea {
+    border: 1px solid #ccc;
+    background-color: white;
+    font-family: Roboto-Light;
+    font-size: 1em;
+    margin-top: 3%;
+    border-radius: 6px;
+    padding: 2% 3%;
+}
+
+.btn:hover {
+    background-color: #007596;
+}
+
+.btn {
+    margin: 3% 0%;
+    width:100%;
+    background-color: #45AED6;
+    border-bottom: 4px solid #4494BB;
+    color: white;
+    font-family: Roboto-Regular;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 1% 2%;
+}
+
 }
 
 
