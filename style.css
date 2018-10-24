@@ -245,8 +245,6 @@ a.anchor {
 
 .intro {
     color: white;
-    font-size:1em;
-    width:40%;
     height: auto;
     margin: 0;
     padding:1% 1%;
@@ -262,27 +260,26 @@ a.anchor {
 .intro h1 {
     color: white;
     font-family: Roboto-Bold;
-    font-size:2.1em;
+    font-size:1em;
 }
 
 .intro p {
     font-family: Roboto-Regular;
-    font-size: 0.9em;
+    font-size: 0.3em;
 }
 
 .intro a {
     background-color: #5CADD3;
-    margin-top: 1%;
+    margin-top: 2%;
     text-align: center;
     color: white;
     float: left;
-    font-size: 1em;
+    font-size: 0.5em;
     font-family: Roboto-Medium;
-    padding: 10px 12px;
+    padding: 6px 6px;
     border-radius: 0.2em;
     text-decoration: none;
     border-bottom: 0.2em solid #2995BE;
-    width:23%;
     overflow: hidden;
 }
 
@@ -310,7 +307,7 @@ svg  circle {
     text-align: center;
 }
 
-.headlines h1{
+.headlines h2{
     margin: 0% 0% 0%;
     font-family: Roboto-Bold;
     font-size: 3em;
@@ -327,14 +324,11 @@ svg  circle {
 }
 
 .flex-container {
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items:center;
     justify-content: space-around;
     width:100%;
-    padding: 0% 0% 0% 15%;
-    
 }
 
 .flex-row:nth-child(1) {
@@ -364,7 +358,6 @@ svg  circle {
 
 .courcont  * {
     margin: auto 1%;
-    padding: 2% 1%;
 }
 
 .courcont p {
@@ -395,7 +388,7 @@ svg  circle {
     text-align: center;
 }
 
-.pres h1{
+.pres h2{
     margin: 0% 0% 1%;
     font-family: Roboto-Bold;
     font-size: 3em;
@@ -408,45 +401,36 @@ svg  circle {
     color:rgb(110,110,110);
     margin: auto;
     line-height:2em;
-    padding: 0 25%;
+    padding: 0 5%;
     text-align: center;
+    margin: 2% 0% 5%;;
 }
 
 .btncont {
-    text-align: center;
-    width: 100%;
-    margin: 4% auto;
     border-radius:13px;
-    padding:0% 30%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
 }
 
 
 .butt {
-    width: 25%;
+
     display: inline-block;
     background-color: rgba(210,210,210,0.7);
     text-align: center;
     vertical-align: middle;
     color:rgb(100,100,100);
     border:none;
-    font-size: 1em;
-    padding:1em;
     cursor:pointer;
 }
 
 
 .mainselected {
     background-color: #5CADD3;
-    text-align: center;
-    vertical-align: middle;
     position: relative;
+    display: inline-block;
     color: white;
     border:none;
-    padding:1em;
-    font-size: 1em;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     border-bottom: 2px solid #3b7793;
@@ -480,7 +464,6 @@ svg  circle {
     background-color: rgb(245,245,242);
     padding: 20px 20px;
     width: 100%;
-    text-align: center;
     align-content: center;
     justify-content: center;
 }
@@ -491,6 +474,7 @@ svg  circle {
 
 .flexrow {
     position: relative;
+    overflow: hidden;
 }
 
 .flexrow img {
@@ -504,7 +488,7 @@ svg  circle {
     bottom:1%;
     left: 0;
     background-color: rgba(0, 0, 0,0.7);
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     width: 100%;
     height: 0;
@@ -517,7 +501,6 @@ svg  circle {
     position: absolute;
     top: -25%;
     right: 5%;
-    overflow: visible;
 }
 
 .ico .bt {
@@ -528,7 +511,6 @@ svg  circle {
     font-size: 16px;
     cursor: pointer;
     border-radius: 50%;
-    overflow: visible;
 }
 
 .text {
@@ -554,7 +536,6 @@ p.p1 {
 .flexrow:hover .overlay {
     height: 35%;
     width:100%;
-    overflow: visible;
 }
 
 .responsive {
@@ -689,8 +670,9 @@ p.p1 {
 
 
 
-@media screen and (max-width: 600px){
-ul.nav li.right, ul.nav li {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    ul.nav li.right, ul.nav li {
     float: none;
     }
 #logo {
@@ -710,18 +692,11 @@ ul.nav li a {
     font-size: 0.8em;
     position: absolute;
     }
-}
 
-@media screen and (max-width: 600px) {
-
-#show {
-
-}
-    
 .container {
     margin-top: 230px;
 }
-
+    
 .slideshow-container {
     max-width: 100%;
     position: relative;
@@ -788,35 +763,15 @@ ul.nav li a {
 
 }
 
-.prev {
-    padding: 10px 5px 10px 50px;
-    top: calc(50% - 20px);
-    left:-50px;
-    color:white;
-}
-
-.next {
-    padding: 10px 40px 10px 5px;
-    top: calc(50% - 20px);
-    right: -40px;
-    color:white;
-    background-size: 100% 2%;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-}
-
 .intro {
     color: white;
     margin: 0;
-    padding:1% 1%;
-    position: absolute;
-    top: 45%;
-    left: 16%;
     -ms-transform: translate(-23%, -50%);
     transform: translate(-23%, -50%);
     overflow:hidden;
     clear:both;
     font-size: 12pt;
+    width:auto;
 }
 
 .intro h1 {
@@ -836,96 +791,15 @@ ul.nav li a {
     color: white;
     float: left;
     font-family: Roboto-Medium;
-    padding: 12px 16px;
+    padding: 2px 6px;
     border-radius: 0.2em;
     text-decoration: none;
     border-bottom: 0.2em solid #2995BE;
-    width:23%;
+    width: auto;
     overflow: hidden;
     font-size: 1em;
 }
     
-}
-
-@media only screen and (min-width: 992px) {
-    .intro {
-    color: white;
-    font-size:1em;
-    width:40%;
-    height: auto;
-    margin: 0;
-    padding:1% 1%;
-    position: absolute;
-    top: 45%;
-    left: 23%;
-    -ms-transform: translate(-23%, -50%);
-    transform: translate(-23%, -50%);
-    overflow:hidden;
-    clear:both;
-}
-
-.intro h1 {
-    color: white;
-    font-family: Roboto-Bold;
-    font-size:2.1em;
-}
-
-.intro p {
-    font-family: Roboto-Regular;
-    font-size: 0.9em;
-}
-
-.intro a {
-    background-color: #5CADD3;
-    margin-top: 1%;
-    text-align: center;
-    color: white;
-    float: left;
-    font-size: 1em;
-    font-family: Roboto-Medium;
-    padding: 10px 12px;
-    border-radius: 0.2em;
-    text-decoration: none;
-    border-bottom: 0.2em solid #2995BE;
-    width:23%;
-    overflow: hidden;
-}
-
-}
-
-@media only screen and (min-width: 992px){
-.flex-row:nth-child(1) {
-    margin-left:0%; 
-    flex:1;
-}
-
-.flex-row:nth-child(2) {
-    margin-top: 8%;
-    margin-left: 0%;
-    flex:2;
-}
-
-.doms {
-    margin: 0% auto;
-    font-family: Roboto-Bold;
-    color:#000;
-    line-height: 2em;
-}
-    
-.courcont {
-    display: flex;
-    flex-wrap: nowrap;
-    font-size: 1em;
-    font-family: Roboto-Regular;
-    text-align: justify;
-    color:rgb(110,110,110);
-    padding-bottom:1%;
-    padding-right:5%;
-}
-}
-
-@media screen and (max-width: 600px){
-
 .headlines {
     margin-top: 2%;
     text-align: center;
@@ -966,7 +840,7 @@ ul.nav li a {
     
 .flex-row:nth-child(2) {
     flex: 1;
-     margin: 2% auto;
+    margin: 2% auto;
 }
 
 .courcont {
@@ -986,7 +860,6 @@ ul.nav li a {
     margin: 0% auto 5%;
     justify-content:center;
     align-content:center;
-    padding: 5% 5% 5%;
 }
    
 .pres {
@@ -995,10 +868,10 @@ ul.nav li a {
     padding: 5% 0%;
 }
     
-.pres h1 {
+.pres h2 {
     margin: 0% 0% 5%;
     font-family: Roboto-Bold;
-    font-size: 2.5em;
+    font-size: 2em;
 }
     
 .pres p {
@@ -1010,7 +883,7 @@ ul.nav li a {
 }
 
 .btncont {
-    width: 100%;
+    width: 80%;
     margin: 0% auto;
     padding: 0%;
     display: flex;
@@ -1026,7 +899,7 @@ ul.nav li a {
     background-color: rgb(210,210,210);
     width:100%;
     margin: 0px auto;
-    padding: 0.5em;
+
     display: inline-block;
     overflow: hidden;
     text-align: center;
@@ -1045,31 +918,27 @@ ul.nav li a {
     position: relative;
     color: white;
     border-bottom: 1px solid #468CAD;
-    }
-}
-    
-
-@media screen and (max-width: 600px){
-    .flex-row {
-        position: relative;
-        width: 100%;}
-
-    .flex-row img {
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
-
-    .flex-row p {
-        font-size: 1em;
-        font-family: Roboto-Regular;
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
 }
 
-@media only screen and (max-width: 700px) {
+.flex-row {
+    position: relative;
+    width: 100%;
+}
+
+.flex-row img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.flex-row p {
+    font-size: 1em;
+    font-family: Roboto-Regular;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
     
 .projcontainer {
     display: flex;
@@ -1087,10 +956,6 @@ ul.nav li a {
     
 }
 
-.flexrow {
-    position: relative;
-}
-
 .flexrow img {
     width: 100%;
     height: auto;
@@ -1099,9 +964,7 @@ ul.nav li a {
     .responsive {
         width: 100%;
     }  
-}
 
-@media screen and (max-width: 600px) {
 .footer {
     margin: 0% auto;
     padding: 0%;
@@ -1136,9 +999,9 @@ ul.nav li a {
     position: relative;
     width:100%;
     right:0%;
+        padding: 0 ;
 }
- 
-
+    
 #comp {
     font-family: Roboto-Medium;
     color: rgb(100,100,100);
@@ -1191,281 +1054,89 @@ ul.nav li a {
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .intro {
-    color: white;
-
-    width:70%;
-    margin: 0;
-    padding:1% 1%;
-    position: absolute;
-    top: 45%;
-    left: 30%;
-    -ms-transform: translate(-23%, -50%);
-    transform: translate(-23%, -50%);
-    overflow:hidden;
-    clear:both;
-
-}
-
-.intro h1 {
-    color: white;
-    font-family: Roboto-Bold;
-    font-size: 1.5em;
-}
-
-.intro p {
-    font-family: Roboto-Regular;
-}    
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
     
-.intro a {
-    background-color: #5CADD3;
-    margin-top: 1%;
-    text-align: center;
-    color: white;
-    float: left;
-    font-family: Roboto-Medium;
-    padding: 2px 6px;
-    border-radius: 0.2em;
-    text-decoration: none;
-    border-bottom: 0.2em solid #2995BE;
-    width:23%;
-    overflow: hidden;
-}
-    
-.headlines {
-    margin-top: 2%;
-    text-align: center;
-}
-
-.headlines h2{
-    margin: 0% 0% 5%;
-    font-family: Roboto-Bold;
-    font-size: 2.5em;
-}
-    
-.headlines p{
-    font-family: Roboto-Regular;
-    font-size: 1em;
-    color:rgb(110,110,110);
-    text-align: center;
-    margin:3% auto;
-} 
-
 .flex-container {
     width:100%;
-    padding:0;
-    margin:0;
     display: flex;
-    flex-wrap: wrap;
     flex-direction:column;
     align-items:center;
     justify-content: center;
+    padding:0;
+    margin:0;
 }
+    
 .flex-row:nth-child(1) {
     flex:1;
-    justify-content:center;
-    align-items:center;
-    margin:2% auto;
+    text-align: center;
+    margin: 2% auto
     align-content: center;
 }
 
     
 .flex-row:nth-child(2) {
-    flex:1;
-     margin:2% auto;
+    flex: 1;
+     margin: 2%;
 }
-
+    
 .courcont {
     display: flex;
     flex-wrap: wrap;
+
 }
 
-.doms {
-    margin: 0%;
-    font-family: Roboto-Bold;
-    color:#000;
-    line-height: 2em;
-}
-
-.courcont  * {
+.courcont *{
     margin: 2% auto;
 }
-    
-.courcont p {
-    font-family: Roboto-Regular;
-    color:rgb(110,110,110);
-    font-size:1em;
-    margin: 0% auto 5%;
-    justify-content:center;
-    align-content:center;
-    padding: 0% 5% 5%;
-    text-align: center;
-    }
 
-#stat {
-    width : 20vw;
-}
-
-#cube {
-    width : 20vw;
-}
-
-#pie {
-    width : 20vw;
-    }
-    
-.pres {
-    width: 100%;
-    margin: 0% auto 5%;
-    padding: 5% 0%;
-}
-    
-.pres h2 {
-    margin: 0% 0% 5%;
-    font-family: Roboto-Bold;
-    font-size: 2.5em;
-}
-    
-.pres p {
-    font-family: Roboto-Regular;
-    font-size: 1em;
-    color:rgb(110,110,110);
-    text-align: center;
-    margin:3% auto 0%;
-}
-
-.btncont {
-    width:100%;
-    margin:2% 20% 5%;
-    padding: 0% ;
-    display: flex;
-    padding:0% 0%;
-    flex-wrap: wrap;
-    text-align: center;
-    vertical-align: middle;
-    flex-direction: row;
-    border:none;
+.courcont p{
+    text-align: center;        
 }
     
 .butt {
-    background-color: rgb(210,210,210);
-    width:25%;
-    margin: 0px auto;
-    padding: 0.5em;
-    display: inline-block;
-    overflow: hidden;
-    text-align: center;
-    font-size: 1em;
-    text-decoration: none;
-    border: none;
-    font-family: Roboto-Medium;
-    color: rgb(126,126,126);
+        width:100%;
 }
     
+} 
 
-.mainselected {
-    background-color: #5CADD3;
-    text-align: center;
-    vertical-align: middle;
-    position: relative;
-    color: white;
-    border-bottom: 1px solid #468CAD;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .headlines h2{
+        font-size: 2em;
+        margin-bottom: 1%;
+        
+    }
+    .pres h2 {
+        font-size:2em;
     }
     
-.footer {
-    margin: 0% auto;
-    padding: 0%;
-    width:100%;
-}
-
-.ggwrap {
-    position: relative;
-}
-
-.carte {
-    margin:0% auto; 
-    width: 100%;
-    max-height: 550px;
-}
-
-#mapover {
-    width  : 100%;
-    height : 100%;
-    background: #98C7F0;
-    position: absolute;
-    opacity: 0.5;/*add this*/
-    top: 0px; 
-    left: 0px; 
-}
-
-.carte iframe {
-    border:0;
-}
+    .btncont {
+        margin-bottom: 3%;
+    }
     
-.contact {
-    position: relative;
-    width:100%;
-    right:0%;
-    padding:0;
-    font-size: 1.5rem;
-}
- 
+    .butt {
+        width:70px;
+        height: 30px;
+        font-size: 10px;
+    }  
+} 
 
-#comp {
-    font-family: Roboto-Medium;
-    color: rgb(100,100,100);
-}
-
-.inlin legend h3 {
-    font-family: Roboto-Bold;
-    text-align: center;
-}
-
-.inlin legend h4 {
-    text-align: center;
-    justify-content: center;
-    color: #64686D;
-    font-family: Roboto-Regular;
-}
-
-.inlin input[type=text], input[type=email] {
-    margin-top: 3%;
-    font-size: 1em;
-    font-family: Roboto-Light;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    background-color: white;
-    padding: 2% 3%;
-}
-
-.inlin textarea {
-    border: 1px solid #ccc;
-    background-color: white;
-    font-family: Roboto-Light;
-    font-size: 1em;
-    margin-top: 3%;
-    border-radius: 6px;
-    padding: 2% 3%;
-}
-
-.btn:hover {
-    background-color: #007596;
-}
-
-.btn {
-    margin: 3% 0%;
-    width:100%;
-    background-color: #45AED6;
-    border-bottom: 4px solid #4494BB;
-    color: white;
-    font-family: Roboto-Regular;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-    padding: 1% 2%;
-}
-
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .pres h2 {
+        font-size:2em;
+    }
+    
+    .btncont {
+        margin-bottom: 3%;
+    }
+    
+    .butt {
+        width:70px;
+        height: 30px;
+        font-size: 10px;
+    }    
 }
 
 
