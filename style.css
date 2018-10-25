@@ -372,16 +372,16 @@ svg  circle {
 .c {
     position: relative;
      border-radius: 50%;
-    border: solid 2px rgb(210,210,210);
-    height:75px;
-    width:75px;
+    border: solid 1px rgb(210,210,210);
+    height:50px;
+    width:50px;
     vertical-align: middle;
     text-align: center;
 }
 
 .fa-line-chart, .fa-pie-chart {
-    top:25%;
-    right:25%;
+    top:30%;
+    right:28%;
     color: #5CADD3;
     position: absolute;
     vertical-align: middle; 
@@ -390,7 +390,7 @@ svg  circle {
 
 .fa-cubes {
     top:25%;
-    right:20%;
+    right:25%;
     color: #5CADD3;
     position: absolute;
     vertical-align: middle; 
@@ -398,15 +398,19 @@ svg  circle {
 }
 
 .fa-circle {
-    bottom:40%;
-    right: -10%;
+    bottom:30%;
+    right: -17%;
     position: absolute;
     display: inline-block;
     vertical-align: middle;
     color:#5CADD3;
+    border: 2px solid white;
 }
 
-
+.fa-sm {
+        font-size: 0.6666666em;
+    vertical-align: -15%;
+}
 
 .flex-container {
     display: flex;
@@ -451,13 +455,6 @@ svg  circle {
 }
 
 
-.fa-circle-o-notch {
-    color: rgb(210,210,210);   
-}
-
-.fa-stack-1x {
-    color: #45AED6;
-}
 
 #cube {
     width : 10%;
@@ -1207,6 +1204,11 @@ ul.nav li a {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .headlines h2{
+        font-size: 2.5em;
+        margin-bottom: 1%;
+        
+    } 
     .pres h2 {
         font-size:2.5em;
     }
@@ -1225,35 +1227,33 @@ ul.nav li a {
         font-size: 10px;
     } 
     
-    .flex-container {
-        flex-direction:row;
-    }
+.flex-container {
+    flex-direction:row;
+}
     
-    .btncont {
+.btncont {
     height:auto;
     font-size:12pt;
-    }
+}    
     
+.butt {
+    width:80px;
+    height:30px;
+    height: auto;
+    font-size:11pt;
+    padding: 5px 5px;
+}
     
-    .butt {
-        width:80px;
-        height:30px;
-        height: auto;
-        font-size:11pt;
-        padding: 5px 5px;
-    }
-    .mainselected {
-        padding: 5px 5px;
-        height:30px;
-        width:80px;
-        font-size: 11pt;
-    }
-    
-
+.mainselected {
+    padding: 5px 5px;
+    height:30px;
+    width:80px;
+    font-size: 11pt;
+}    
     
 .flex-row:nth-child(1) {
     flex:1;
-    padding-bottom:10%;
+    padding-bottom:5%;
 }
 
     
@@ -1262,31 +1262,33 @@ ul.nav li a {
     padding-top:4%;
 }
 
-    .flex-row img {
-        width:85%;
-    margin-left: 10%;
-    }
+.flex-row img {
+    width:65%;
+    margin-left: 20%;
+}
     
 .courcont {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    font-family: Roboto-Regular;
+    color:rgb(110,110,110);
 }
 
-.c {
+.c  {
     margin-right:5%;
 }
-    
-.doms {
-    
-}
+
 
 .courcont *{
 }
 
 .courcont p{
     text-align: justify;
+    font-size:10pt;
+    line-height:150%;
+    padding-right: 5%;
 }
 
 .btncont {
