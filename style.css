@@ -984,7 +984,6 @@ ul.nav li a {
     background-color: rgb(210,210,210);
     width:100%;
     margin: 0px auto;
-
     display: inline-block;
     overflow: hidden;
     text-align: center;
@@ -1155,7 +1154,6 @@ ul.nav li a {
 .flex-row:nth-child(1) {
     flex:1;
     text-align: center;
-    margin: 2% auto
     align-content: center;
 }
 
@@ -1213,6 +1211,10 @@ ul.nav li a {
         font-size:2em;
     }
     
+    .pres p {
+        padding:0% 5%;
+    }
+    
     .btncont {
         margin-bottom: 3%;
     }
@@ -1221,7 +1223,76 @@ ul.nav li a {
         width:70px;
         height: 30px;
         font-size: 10px;
-    }    
+    } 
+    
+    .flex-container {
+        flex-direction:row;
+    }
+    
+    .btncont {
+    height:auto;
+    font-size:12pt;
+    }
+    
+    
+    .butt {
+        width:80px;
+        height:30px;
+        height: auto;
+        font-size:11pt;
+        padding: 5px 5px;
+    }
+    .mainselected {
+        padding: 5px 5px;
+        height:30px;
+        width:80px;
+        font-size: 11pt;
+    }
+    
+    .flex-container {
+
+}
+    
+.flex-row:nth-child(1) {
+    flex:1;
+    text-align: center;
+    align-content: center;
+}
+
+    
+.flex-row:nth-child(2) {
+    flex: 1;
+     margin: 2%;
+}
+    
+.courcont {
+    display: flex;
+    flex-wrap:nowrap;
+    padding:2%;
+    
+}
+    
+.clearfix::after {
+        content: "";
+    clear: both;
+    display: table;
+    }
+    
+.doms {
+    float:left;
+}
+
+.courcont *{
+    margin: 2% auto;
+}
+
+.courcont p{
+}
+    
+.butt {
+        width:100%;
+}
+
 }
 
 
