@@ -1208,7 +1208,7 @@ ul.nav li a {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .pres h2 {
-        font-size:2em;
+        font-size:2.5em;
     }
     
     .pres p {
@@ -1249,49 +1249,64 @@ ul.nav li a {
         font-size: 11pt;
     }
     
-    .flex-container {
 
-}
     
 .flex-row:nth-child(1) {
     flex:1;
-    text-align: center;
-    align-content: center;
+    padding-bottom:10%;
 }
 
     
 .flex-row:nth-child(2) {
     flex: 1;
-     margin: 2%;
+    padding-top:4%;
 }
+
+    .flex-row img {
+        width:85%;
+    margin-left: 10%;
+    }
     
 .courcont {
     display: flex;
-    flex-wrap:nowrap;
-    padding:2%;
-    
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.c {
+    margin-right:5%;
 }
     
-.clearfix::after {
-        content: "";
-    clear: both;
-    display: table;
-    }
-    
 .doms {
-    float:left;
+    
 }
 
 .courcont *{
-    margin: 2% auto;
 }
 
 .courcont p{
+    text-align: justify;
 }
+
+.btncont {
+    width:320px;
+    height:40px;
+
+    }
     
 .butt {
-        width:100%;
+        width:80px;
+        height:40px;
 }
+    .mainselected {
+        width::80px;
+        height:40px;
+
+    }
+    .gal {
+        padding-left: 2%;
+    }
 
 }
 
