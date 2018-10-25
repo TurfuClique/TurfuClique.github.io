@@ -249,6 +249,7 @@ a.anchor {
     margin: 0;
     padding:1% 1%;
     position: absolute;
+    font-size: 25pt;
     top: 45%;
     left: 23%;
     -ms-transform: translate(-23%, -50%);
@@ -265,7 +266,7 @@ a.anchor {
 
 .intro p {
     font-family: Roboto-Regular;
-    font-size: 0.3em;
+    font-size: 0.4em;
 }
 
 .intro a {
@@ -281,6 +282,50 @@ a.anchor {
     text-decoration: none;
     border-bottom: 0.2em solid #2995BE;
     overflow: hidden;
+}
+
+.pr {
+    top:50%;
+    position:absolute;
+    width: 20px;
+    height: 40px;
+    opacity: 0.2;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 18px;
+    border-right: 0;
+    background-color: rgb(10,10,10);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.su {
+    top:50%;
+    position:absolute;
+    width: 20px;
+    height: 40px;
+    background-color: rgb(10,10,10);
+    opacity: 0.2;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+    border-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.n {
+
+    color:white;
+}
+.su {
+    color:white;
+    right:0;
+}
+
+.fa-2x {
+    color:white;  
 }
 
 .prev:hover, .next:hover {
@@ -322,6 +367,46 @@ svg  circle {
     color:rgb(110,110,110);
     text-align: center;
 }
+
+
+.c {
+    position: relative;
+     border-radius: 50%;
+    border: solid 2px rgb(210,210,210);
+    height:75px;
+    width:75px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.fa-line-chart, .fa-pie-chart {
+    top:25%;
+    right:25%;
+    color: #5CADD3;
+    position: absolute;
+    vertical-align: middle; 
+    display:inline-block;
+}
+
+.fa-cubes {
+    top:25%;
+    right:20%;
+    color: #5CADD3;
+    position: absolute;
+    vertical-align: middle; 
+    display:inline-block;
+}
+
+.fa-circle {
+    bottom:40%;
+    right: -10%;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    color:#5CADD3;
+}
+
+
 
 .flex-container {
     display: flex;
