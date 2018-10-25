@@ -224,25 +224,6 @@ a.anchor {
 
 }
 
-.prev {
-    padding: 20px 10px 20px 50px;
-    top: calc(50% - 20px);
-    left:-50px;
-    color:white;
-    cursor:pointer;
-}
-
-.next {
-    padding: 20px 50px 20px 10px;
-    top: calc(50% - 20px);
-    right: -40px;
-    color:white;
-    background-size: 100% 2%;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    cursor:pointer;
-}
-
 .intro {
     color: white;
     height: auto;
@@ -282,6 +263,7 @@ a.anchor {
     text-decoration: none;
     border-bottom: 0.2em solid #2995BE;
     overflow: hidden;
+    cursor:pointer;
 }
 
 .pr {
@@ -294,6 +276,7 @@ a.anchor {
     border-top-right-radius: 80px;
     border-right: 0;
     color:white;
+    cursor:pointer;
     background-color: rgba(10,10,10,0.2);
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -313,18 +296,10 @@ a.anchor {
     border-left: 0;
     color:white;
     right:0;
+    cursor:pointer;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-.n {
-
-    color:white;
-}
-
-.fa-2x {
-    color:white;  
 }
 
 .prev:hover, .next:hover {
@@ -1166,7 +1141,18 @@ ul.nav li a {
 
 .pres p {
     padding: 0%;
-}   
+}
+
+.btncont {
+    margin-bottom: 3%;
+    }
+    
+.butt {
+    width:70px;
+    height: 30px;
+    font-size: 10px;
+    }  
+
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
