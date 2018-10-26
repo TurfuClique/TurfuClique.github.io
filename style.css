@@ -269,9 +269,9 @@ a.anchor {
 .pr {
     top:45%;
     position:absolute;
-    padding:8px 5px;
-    width: 30px;
-    height: 50px;
+    padding:20px 15px;
+    width: 40px;
+    height: 70px;
     border-bottom-right-radius: 70px;
     border-top-right-radius: 80px;
     border-right: 0;
@@ -287,9 +287,9 @@ a.anchor {
 .su {
     top:45%;
     position:absolute;
-    padding:8px 10px;
-    width: 30px;
-    height: 50px;
+    padding:20px 15px;
+    width: 40px;
+    height: 70px;
     background-color: rgba(10,10,10,0.2);
     border-bottom-left-radius: 80px;
     border-top-left-radius: 80px;
@@ -447,7 +447,7 @@ svg  circle {
     line-height:2em;
     padding: 0 5%;
     text-align: center;
-    margin: 2% 0% 5%;;
+    margin: 1% 0% 4%;
 }
 
 .btncont {
@@ -458,8 +458,6 @@ svg  circle {
 
 
 .butt {
-
-    display: inline-block;
     background-color: rgba(210,210,210,0.7);
     text-align: center;
     vertical-align: middle;
@@ -630,7 +628,7 @@ p.p1 {
 }
 
 .contact form {
-    background-color: rgba(245,243,242,0.7);
+    background-color: rgba(255,253,252,0.8);
     width: 100%;
     box-sizing: border-box;
     padding: 0 5%;
@@ -1179,52 +1177,29 @@ ul.nav li a {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .headlines h2{
-        font-size: 2.5em;
-        margin-bottom: 1%;
-        
-    } 
-    .pres h2 {
-        font-size:2.5em;
-    }
+.headlines h2{
+    font-size: 3em;
+    margin-bottom: 1%;        
+} 
     
-    .pres p {
-        padding:0% 5%;
-    }
+.gal {
+    margin-right: 5%;
+}
+
+.pres h2 {
+    font-size:3em;
+}
     
-    .btncont {
-        margin-bottom: 3%;
-    }
+.pres p {
+    font-size:1em;
+    padding:0% 25%;
+}
     
-    .butt {
-        width:70px;
-        height: 30px;
-        font-size: 10px;
-    } 
     
 .flex-container {
     flex-direction:row;
 }
-    
-.btncont {
-    height:auto;
-    font-size:12pt;
-}    
-    
-.butt {
-    width:80px;
-    height:30px;
-    height: auto;
-    font-size:11pt;
-    padding: 5px 5px;
-}
-    
-.mainselected {
-    padding: 5px 5px;
-    height:30px;
-    width:80px;
-    font-size: 11pt;
-}    
+
     
 .flex-row:nth-child(1) {
     flex:1;
@@ -1267,26 +1242,21 @@ ul.nav li a {
 }
 
 .btncont {
-    width:320px;
+    margin-right:5%; 
+    width:400px;
     height:40px;
-
-    }
+}
     
 .butt {
-        width:80px;
-        height:40px;
+    width:25%;
+    height:40px;
+    font-size: 11pt;
 }
-    .mainselected {
-        width::80px;
-        height:40px;
-
-    }
-    .gal {
-        padding-left: 2%;
-    }
-
+    
+.gal {
+    padding-left: 2%;
 }
-
+}
 @media only screen and (min-width:1600px) {
     
 .btncont{
@@ -1299,15 +1269,14 @@ ul.nav li a {
 }
 
 @media only screen and (min-width:1980px) {
-    .btncont{
-        width:1600px;
-        margin:2% 50%;
-    }
-    .butt {
-    width: 400px;     
-    }
+.btncont{
+    width:1600px;
+    margin:2% 50%;
 }
-
+.butt {
+    width: 400px;     
+}
+}
 @media print {
     .footer {page-break-after: always;}
 }
