@@ -849,6 +849,14 @@ ul.nav li a {
     overflow: hidden;
     font-size: 1em;
 }
+   
+.pr {
+     display: none;    
+}
+
+.su {
+    display: none;  
+}
     
 .headlines {
     margin-top: 2%;
@@ -1167,10 +1175,30 @@ ul.nav li a {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+.intro h1 {
+    font-size:18pt;        
+}
+
+.intro p {
+    font-size: 7.5pt;    
+}
+
+.intro a {
+    padding:4px 8px;
+    font-size: 8pt;
+}
+    
+    
 .headlines h2{
     font-size: 2em;
     margin-bottom: 1%;
-    }
+}
+    
+.headlines p {
+    padding:0%;
+    margin: 2%;
+}
     
 .pres h2 {
     font-size:2em;
@@ -1197,7 +1225,11 @@ ul.nav li a {
 .headlines h2{
     font-size: 3em;
     margin-bottom: 1%;        
-} 
+}
+
+.headlines p {
+    padding: 0% 25%;
+}
     
 .gal {
     margin-right: 5%;
