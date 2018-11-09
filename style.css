@@ -654,18 +654,15 @@ p.p1 {
     font-size:1.1em;
 }
 
-.contact legend {
-    width:100%;
-    padding: 0%;
-}
 
-.contact legend h3 {
+
+.contact  h3 {
     font-family: Roboto-Bold;
     font-size: 1.7em;
     margin: 5% 0 3%;
 }
 
-.contact legend h4 {
+.contact  h4 {
     max-height: 10%;
     width: 100%;
     color: #64686D;
