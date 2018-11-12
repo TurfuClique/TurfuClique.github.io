@@ -726,8 +726,11 @@ p.p1 {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    ul.nav li.right, ul.nav li {
+
+    
+ul.nav li.right, ul.nav li {
     float: none;
+
     }
 #logo {
     display: inline-block;
@@ -1123,7 +1126,11 @@ ul.nav li a {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
+
+#logo {
+    padding:18px 0px;
+}
+
 .flex-container {
     width:100%;
     display: flex;
@@ -1181,7 +1188,9 @@ ul.nav li a {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    
+    #logo {
+        padding:10px 10px;
+    } 
 
 .intro h1 {
     font-size:18pt;        
@@ -1229,6 +1238,9 @@ ul.nav li a {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    #logo {
+        padding:5px 5px;
+    }
 .headlines h2{
     font-size: 3em;
     margin-bottom: 1%;        
