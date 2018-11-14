@@ -1128,7 +1128,7 @@ ul.nav li a {
 @media only screen and (min-width: 600px) {
 
 #logo {
-    padding:18px 0px;
+    padding: 18px 0px;
 }
 
 .flex-container {
@@ -1187,10 +1187,6 @@ ul.nav li a {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-    #logo {
-        padding:10px 10px;
-    } 
 
 .intro h1 {
     font-size:18pt;        
